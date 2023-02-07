@@ -117,6 +117,60 @@ Please enter an integer: 42
 ...
 More
 ```
+## for statement
+```
+words = ['cat', 'window', 'defenestrate']
+for w in words:
+  print(w, len(w))
+```
+
+```
+for i in range(5):
+  print(i)
+```
+
+```
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+
+for i in range(len(a)):
+  print(i, a[i])
+```
+
+# Numpy arrays
+Numpy, on the other hand, is a core Python library for scientific computation (hence the name “Numeric Python” or Numpy). The library provides methods and functions to create and work with multi-dimensional objects called arrays. Arrays are grids of values, and unlike Python lists, they are of the same data type:
+
+```
+# 1-dimesional array
+array([1, 2, 3])
+
+# 2-dimensional array
+array([[1, 2],
+       [3, 4],
+       [5, 6]])
+```
+
+
+# Matplotlib
+
+Matplotlib is a 2d plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments. Matplotlib can be used in Python scripts, Python and IPython shell, Jupyter Notebook, web application servers and GUI toolkits.
+
+matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB. Majority of plotting commands in pyplot have MATLAB analogs with similar arguments. Let us take a couple of examples:
+
+```
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
+plt.ylabel('some numbers')
+plt.show()
+```
+
+```
+import matplotlib.pyplot as plt
+>>> x = [21,22,23,4,5,6,77,8,9,10,31,32,33,34,35,36,37,18,49,50,100]
+>>> num_bins = 5
+>>> plt.hist(x, num_bins, facecolor='blue')
+>>> plt.show()
+```
+
 # References
 
 [^1]: https://developers.google.com/edu/python/introduction
